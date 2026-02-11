@@ -3,35 +3,218 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OPEN NOTE</title>
+<title>GET KEY - NgânDev</title>
+
 <style>
 body{
-  background:#000;
-  color:#fff;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height:100vh;
-  font-family:Arial;
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#0a0f1c,#0d1b2a);
+    color:white;
 }
-a{
-  color:#fff;
-  text-decoration:none;
-  font-size:18px;
-  border:2px solid #fff;
-  padding:14px 22px;
-  border-radius:12px;
+
+/* ===== HEADER ===== */
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    background:#0b1320;
+    border-bottom:1px solid #00e5ff;
 }
-a:hover{
-  background:#111;
+
+.header h2{
+    margin:0;
+    color:#00e5ff;
+}
+
+.telegram-btn{
+    padding:8px 15px;
+    border-radius:20px;
+    background:#111827;
+    border:1px solid #00e5ff;
+    color:white;
+    text-decoration:none;
+}
+
+.telegram-btn:hover{
+    background:#00e5ff;
+    color:black;
+}
+
+/* ===== MAIN BOX ===== */
+.container{
+    max-width:400px;
+    margin:30px auto;
+    padding:20px;
+    background:#0f172a;
+    border-radius:20px;
+    border:2px solid #00e5ff;
+    box-shadow:0 0 20px #00e5ff33;
+}
+
+/* ===== SELECT ===== */
+select{
+    width:100%;
+    padding:12px;
+    border-radius:12px;
+    background:#111827;
+    border:2px solid #00e5ff;
+    color:white;
+    margin-bottom:20px;
+}
+
+/* ===== BUTTON GET KEY ===== */
+.get-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(90deg,#00ff88,#00e5ff);
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.get-btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px #00e5ff;
+}
+
+/* ===== DOWNLOAD BOX ===== */
+.download-box{
+    margin-top:25px;
+    padding:15px;
+    border-radius:15px;
+    background:#0b0f1a;
+    border:2px solid #00e5ff;
+}
+
+.download-box h3{
+    text-align:center;
+    margin-bottom:15px;
+    color:#00e5ff;
+}
+
+.download-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:12px;
+    padding:10px;
+    border-radius:10px;
+    background:#111827;
+    border:1px solid #00e5ff;
+    transition:0.3s;
+}
+
+.download-item:hover{
+    background:#00e5ff22;
+}
+
+.download-item span{
+    color:white;
+}
+
+.download-btn{
+    padding:6px 15px;
+    border:none;
+    border-radius:8px;
+    background:#00e5ff;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.download-btn:hover{
+    background:white;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+    text-align:center;
+    margin-top:20px;
+    font-size:14px;
+    color:#aaa;
 }
 </style>
 </head>
 <body>
 
-<a href="https://vi.anotepad.com/notes/643gfpji" target="_blank">
-👉 BẤM VÀO ĐÂY 👈
-</a>
+<div class="header">
+    <h2>GET KEY</h2>
+    <a href="https://t.me/vhmodsgame" target="_blank" class="telegram-btn">Telegram</a>
+</div>
+
+<div class="container">
+
+    <h2>Lấy Key Nhanh • An Toàn</h2>
+    <p>Chọn Game Mà Bạn Muốn Lấy Key.</p>
+
+    <!-- CHỌN GAME -->
+    <select id="gameSelect">
+    <option value="https://vuotnhanh.com/Y6K4">Mod Menu FC MOBILE</option>
+    <option value="https://vuotnhanh.com/eurg">Mod Menu Liên Quân</option>
+    <option value="https://link4m.com/ZK8vJff">Mod Menu 8Ball Pool</option>
+</select>
+
+    <!-- NÚT LẤY KEY -->
+    <button class="get-btn" onclick="getKey()">Bấm để lấy key</button>
+
+    <!-- LINK TẢI -->
+    <div class="download-box">
+        <h3>📥 Link Tải Game</h3>
+
+        <div class="download-item">
+            <span>FC Mobile Quốc Tế</span>
+            <a href="https://link4m.com/Wkr5Wr" target="_blank">
+                <button class="download-btn">Tải</button>
+            </a>
+        </div>
+
+        <div class="download-item">
+            <span>FC Mobile VN</span>
+            <a href="https://link4m.com/8qbcQoU" target="_blank">
+                <button class="download-btn">Tải</button>
+            </a>
+        </div>
+
+        <div class="download-item">
+            <span>Liên Quân 64Bit</span>
+            <a href="https://link4m.com/tyCZ9" target="_blank">
+                <button class="download-btn">Tải</button>
+            </a>
+        </div>
+
+        <div class="download-item">
+            <span>Liên Quân 32Bit</span>
+            <a href="https://link4m.com/Kv8s4" target="_blank">
+                <button class="download-btn">Tải</button>
+            </a>
+        </div>
+
+        <div class="download-item">
+            <span>8 Ball Pool</span>
+            <a href="https://link4m.com/9cSzc8nY" target="_blank">
+                <button class="download-btn">Tải</button>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        © 2026 VHMODSDev • All rights reserved
+    </div>
+
+</div>
+
+<script>
+function getKey(){
+    var link = document.getElementById("gameSelect").value;
+    window.location.href = link;
+}
+</script>
 
 </body>
 </html>
